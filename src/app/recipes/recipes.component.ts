@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from './recipe.ts';
 
 @Component({
   moduleId: module.id,
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipesComponent implements OnInit {
 
+  selectedRecipe: Recipe;
   constructor() { }
 
   ngOnInit() {
